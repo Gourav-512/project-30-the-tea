@@ -754,65 +754,67 @@
 
         <!-- Main Contact Card -->
         <div
-          class="grid md:grid-cols-2 gap-8 md:gap-0 bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100 group hover:shadow-brand/20 transition-shadow duration-500">
+          class="grid md:grid-cols-2 gap-0 bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100 group hover:shadow-brand/20 transition-shadow duration-500">
           <!-- Map/Info Side -->
           <div
-            class="relative overflow-hidden min-h-[300px] md:min-h-[600px] bg-gray-300 group/map flex items-center justify-center">
+            class="relative overflow-hidden min-h-[500px] md:min-h-[600px] bg-gray-300 group/map flex items-center justify-center">
             <img src="images/Map.jpeg"
               class="w-full h-full object-cover group-hover/map:scale-105 transition-transform duration-700">
 
-            <!-- Subtle Gradient Overlay (lighter) -->
-            <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent z-10"></div>
+            <!-- Subtle Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-10"></div>
 
             <!-- Contact Info Overlay -->
-            <div class="absolute inset-0 z-20 p-6 md:p-12 flex flex-col justify-between text-[#3e2723]">
+            <div class="absolute inset-0 z-20 p-5 md:p-12 flex flex-col justify-between text-[#3e2723]">
               <!-- Header -->
-              <div class="space-y-4">
+              <div class="space-y-3 md:space-y-4">
                 <div
-                  class="inline-block bg-[#efebe9]/90 backdrop-blur-md px-6 py-3 rounded-full border border-[#3e2723]/20 mb-2 w-fit">
-                  <h3 class="text-base md:text-xl font-serif font-bold flex items-center gap-2">📍 Shreemadhur
+                  class="inline-block bg-[#efebe9]/95 backdrop-blur-md px-5 py-2 md:px-6 md:py-3 rounded-full border border-[#3e2723]/20 mb-1 w-fit">
+                  <h3 class="text-sm md:text-xl font-serif font-bold flex items-center gap-2">📍 Shreemadhur
                     Headquarters</h3>
                 </div>
-                <div class="bg-[#efebe9]/80 backdrop-blur-sm p-4 rounded-xl border border-[#3e2723]/10 max-w-md">
-                  <p class="leading-relaxed text-sm md:text-base font-semibold">
+                <div
+                  class="bg-[#efebe9]/90 backdrop-blur-sm p-4 rounded-xl border border-[#3e2723]/10 max-w-md shadow-lg">
+                  <p class="leading-relaxed text-xs md:text-base font-semibold">
                     G1, Panhalkar Building, Annaso Patil Nagar Rd, Bharat Nagar, Gaon Bhag, Sangli, Maharashtra 416416
                   </p>
                 </div>
               </div>
 
               <!-- Contact Methods -->
-              <div class="space-y-4">
+              <div class="space-y-3 md:space-y-4">
                 <a href="tel:+917020757638"
-                  class="flex items-center gap-4 group/link hover:translate-x-2 transition-all duration-300 p-4 rounded-2xl bg-[#efebe9]/90 hover:bg-[#efebe9] backdrop-blur-lg border border-[#3e2723]/20 hover:border-[#3e2723]/40 hover:shadow-lg">
+                  class="flex items-center gap-3 md:gap-4 group/link hover:translate-x-2 transition-all duration-300 p-3 md:p-4 rounded-2xl bg-[#efebe9]/95 hover:bg-[#efebe9] backdrop-blur-lg border border-[#3e2723]/20 hover:border-[#3e2723]/40 hover:shadow-lg">
                   <div
-                    class="w-14 h-14 rounded-full bg-[#3e2723] flex items-center justify-center text-2xl flex-shrink-0 group-hover/link:scale-110 transition-transform shadow-lg">
+                    class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#3e2723] flex items-center justify-center text-xl md:text-2xl flex-shrink-0 group-hover/link:scale-110 transition-transform shadow-lg">
                     📞</div>
                   <div>
-                    <p class="text-xs opacity-75 font-bold uppercase tracking-wider">Call Us</p>
-                    <span class="font-bold text-base md:text-lg">+91 7020757638</span>
+                    <p class="text-[10px] md:text-xs opacity-75 font-bold uppercase tracking-wider">Call Us</p>
+                    <span class="font-bold text-sm md:text-lg">+91 7020757638</span>
                   </div>
                 </a>
 
                 <a href="mailto:vajarev@gmail.com"
-                  class="flex items-center gap-4 group/link hover:translate-x-2 transition-all duration-300 p-4 rounded-2xl bg-[#efebe9]/90 hover:bg-[#efebe9] backdrop-blur-lg border border-[#3e2723]/20 hover:border-[#3e2723]/40 hover:shadow-lg">
+                  class="flex items-center gap-3 md:gap-4 group/link hover:translate-x-2 transition-all duration-300 p-3 md:p-4 rounded-2xl bg-[#efebe9]/95 hover:bg-[#efebe9] backdrop-blur-lg border border-[#3e2723]/20 hover:border-[#3e2723]/40 hover:shadow-lg">
                   <div
-                    class="w-14 h-14 rounded-full bg-[#3e2723] flex items-center justify-center text-2xl flex-shrink-0 group-hover/link:scale-110 transition-transform shadow-lg">
+                    class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#3e2723] flex items-center justify-center text-xl md:text-2xl flex-shrink-0 group-hover/link:scale-110 transition-transform shadow-lg">
                     ✉️</div>
                   <div>
-                    <p class="text-xs opacity-75 font-bold uppercase tracking-wider">Email Us</p>
-                    <span class="font-bold text-base md:text-lg">vajarev@gmail.com</span>
+                    <p class="text-[10px] md:text-xs opacity-75 font-bold uppercase tracking-wider">Email Us</p>
+                    <span class="font-bold text-sm md:text-lg">vajarev@gmail.com</span>
                   </div>
                 </a>
 
                 <a href="https://wa.me/917020757638?text=Hello%20Shreemadhur%2C%20I%20want%20to%20enquire%20about%20your%20products.%20Please%20assist."
                   target="_blank" rel="noopener noreferrer"
-                  class="flex items-center gap-4 group/link hover:translate-x-2 transition-all duration-300 p-4 rounded-2xl bg-[#efebe9]/90 hover:bg-[#25D366]/20 backdrop-blur-lg border border-[#3e2723]/20 hover:border-[#25D366]/50 hover:shadow-lg hover:shadow-[#25D366]/10">
+                  class="flex items-center gap-3 md:gap-4 group/link hover:translate-x-2 transition-all duration-300 p-3 md:p-4 rounded-2xl bg-[#25D366]/20 hover:bg-[#25D366]/40 backdrop-blur-lg border border-[#25D366]/50 hover:border-[#25D366]/80 hover:shadow-lg hover:shadow-[#25D366]/20">
                   <div
-                    class="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-2xl flex-shrink-0 group-hover/link:scale-110 transition-transform shadow-lg">
+                    class="w-10 h-10 md:w-14 md:h-14 rounded-full bg-[#25D366] flex items-center justify-center text-xl md:text-2xl flex-shrink-0 group-hover/link:scale-110 transition-transform shadow-lg">
                     💬</div>
                   <div>
-                    <p class="text-xs opacity-75 font-bold uppercase tracking-wider">WhatsApp</p>
-                    <span class="font-bold text-base md:text-lg">+91 7020757638</span>
+                    <p class="text-[10px] md:text-xs opacity-75 font-bold uppercase tracking-wider text-[#3e2723]">
+                      WhatsApp</p>
+                    <span class="font-bold text-sm md:text-lg text-[#3e2723]">+91 7020757638</span>
                   </div>
                 </a>
               </div>
@@ -821,21 +823,21 @@
 
           <!-- Form Side -->
           <div
-            class="p-8 md:p-16 flex flex-col justify-center bg-gradient-to-br from-white via-white to-brand-light/30">
+            class="p-6 md:p-16 flex flex-col justify-center bg-gradient-to-br from-white via-white to-brand-light/30">
             <div class="mb-8">
-              <h3 class="text-3xl md:text-4xl font-serif font-bold text-brand-text mb-3">Send us a Message</h3>
+              <h3 class="text-2xl md:text-4xl font-serif font-bold text-brand-text mb-3">Send us a Message</h3>
               <div class="h-1.5 w-16 bg-gradient-to-r from-brand via-brand to-brand-dark rounded-full shadow-lg"></div>
               <p class="text-gray-600 text-sm md:text-base mt-4">Fill out the form below and we'll get back to you as
                 soon as possible.</p>
             </div>
 
-            <form class="space-y-6">
+            <form class="space-y-5 md:space-y-6">
               <div class="relative group">
                 <input type="text"
                   class="w-full bg-white border-2 border-gray-200 rounded-xl p-4 md:p-5 text-brand-text focus:outline-none focus:border-brand focus:bg-white/90 transition-all duration-300 peer placeholder-transparent text-sm md:text-base group-hover:border-gray-300 shadow-sm group-hover:shadow-md"
                   id="name" placeholder="Full Name">
                 <label for="name"
-                  class="absolute left-4 top-4 text-gray-500 text-xs md:text-sm font-medium transition-all duration-300 peer-placeholder-shown:text-base md:peer-placeholder-shown:text-base peer-placeholder-shown:top-4 md:peer-placeholder-shown:top-5 peer-focus:-top-8 peer-focus:text-xs peer-focus:text-brand peer-focus:font-bold bg-white px-1">Your
+                  class="absolute left-4 top-4 text-gray-500 text-[10px] md:text-xs font-medium transition-all duration-300 peer-placeholder-shown:text-sm md:peer-placeholder-shown:text-base peer-placeholder-shown:top-4 md:peer-placeholder-shown:top-5 peer-focus:-top-8 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-brand peer-focus:font-bold bg-white px-1">Your
                   Name</label>
               </div>
 
@@ -844,7 +846,7 @@
                   class="w-full bg-white border-2 border-gray-200 rounded-xl p-4 md:p-5 text-brand-text focus:outline-none focus:border-brand focus:bg-white/90 transition-all duration-300 peer placeholder-transparent text-sm md:text-base group-hover:border-gray-300 shadow-sm group-hover:shadow-md"
                   id="phone" placeholder="Phone Number">
                 <label for="phone"
-                  class="absolute left-4 top-4 text-gray-500 text-xs md:text-sm font-medium transition-all duration-300 peer-placeholder-shown:text-base md:peer-placeholder-shown:text-base peer-placeholder-shown:top-4 md:peer-placeholder-shown:top-5 peer-focus:-top-8 peer-focus:text-xs peer-focus:text-brand peer-focus:font-bold bg-white px-1">Phone
+                  class="absolute left-4 top-4 text-gray-500 text-[10px] md:text-xs font-medium transition-all duration-300 peer-placeholder-shown:text-sm md:peer-placeholder-shown:text-base peer-placeholder-shown:top-4 md:peer-placeholder-shown:top-5 peer-focus:-top-8 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-brand peer-focus:font-bold bg-white px-1">Phone
                   Number</label>
               </div>
 
@@ -853,24 +855,24 @@
                   class="w-full bg-white border-2 border-gray-200 rounded-xl p-4 md:p-5 text-brand-text focus:outline-none focus:border-brand focus:bg-white/90 transition-all duration-300 peer placeholder-transparent text-sm md:text-base group-hover:border-gray-300 shadow-sm group-hover:shadow-md resize-none"
                   id="message" placeholder="Your Message"></textarea>
                 <label for="message"
-                  class="absolute left-4 top-4 text-gray-500 text-xs md:text-sm font-medium transition-all duration-300 peer-placeholder-shown:text-base md:peer-placeholder-shown:text-base peer-placeholder-shown:top-4 md:peer-placeholder-shown:top-5 peer-focus:-top-8 peer-focus:text-xs peer-focus:text-brand peer-focus:font-bold bg-white px-1">Your
+                  class="absolute left-4 top-4 text-gray-500 text-[10px] md:text-xs font-medium transition-all duration-300 peer-placeholder-shown:text-sm md:peer-placeholder-shown:text-base peer-placeholder-shown:top-4 md:peer-placeholder-shown:top-5 peer-focus:-top-8 peer-focus:text-[10px] md:peer-focus:text-xs peer-focus:text-brand peer-focus:font-bold bg-white px-1">Your
                   Message</label>
               </div>
 
               <!-- Submit Buttons -->
-              <div class="grid grid-cols-2 gap-4 pt-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                 <button type="submit"
                   class="bg-brand text-white font-bold py-4 md:py-5 rounded-xl hover:bg-brand-dark hover:shadow-xl transition-all duration-300 shadow-lg transform hover:-translate-y-1 text-sm md:text-base active:scale-95 relative overflow-hidden group/btn">
-                  <span class="relative z-10">Send</span>
+                  <span class="relative z-10">Send Message</span>
                   <div
                     class="absolute inset-0 bg-gradient-to-r from-brand-dark to-brand opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300">
                   </div>
                 </button>
                 <button type="button" onclick="sendViaWhatsApp()"
-                  class="bg-gradient-to-r from-[#25D366] to-[#1fad4f] text-white font-bold py-4 md:py-5 rounded-xl hover:shadow-xl hover:shadow-[#25D366]/40 transition-all duration-300 shadow-lg transform hover:-translate-y-1 flex items-center justify-center gap-2 text-sm md:text-base active:scale-95 relative overflow-hidden group/btn">
+                  class="bg-[#25D366] text-white font-bold py-4 md:py-5 rounded-xl hover:shadow-xl hover:shadow-[#25D366]/40 transition-all duration-300 shadow-lg transform hover:-translate-y-1 flex items-center justify-center gap-2 text-sm md:text-base active:scale-95 relative overflow-hidden group/btn">
                   <span class="relative z-10 flex items-center justify-center gap-2">
                     <span text-lg>💬</span>
-                    <span class="hidden sm:inline">Chat</span>
+                    <span>Chat on WhatsApp</span>
                   </span>
                 </button>
               </div>
@@ -878,8 +880,7 @@
 
             <!-- Info Text -->
             <div class="mt-8 pt-6 border-t-2 border-gray-200">
-              <p class="text-xs md:text-sm text-gray-600 text-center">⏱️ We typically respond within 2-4 hours during
-                business hours</p>
+              <p class="text-[10px] md:text-sm text-gray-600 text-center">⏱️ We typically respond within 2-4 hours</p>
             </div>
           </div>
         </div>
