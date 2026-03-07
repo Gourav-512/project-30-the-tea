@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Mulish:wght@300;400;600;700&display=swap');
+
+/* Base Settings */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f9f6f1;
+    /* Needed for footer reveal to work properly */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c17f30;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8a5714;
+}
+
+/* Hide scrollbar for specific elements */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Loader */
+#loader {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Slider Animation classes */
+/* Banner Cinematic Zoom (Ken Burns) */
+.banner-img {
+    transition: transform 8s ease-out;
+}
+
+/* Simple Banner Fade */
+.slide.data-active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: black;
+}
+
+/* Banner Section - Natural Height (No Cropping) */
+#home {
+    margin-top: 100px;
+    height: auto !important;
+    min-height: auto !important;
+    background-color: #000;
+}
+
+.slider-container {
+    display: grid !important;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.slide {
+    grid-area: 1/1;
+    /* Stack slides on top of each other */
+    position: relative;
+    /* Let them dictate the height */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+}
+
+.slide.data-active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    /* Guarantee full visibility */
+}
+
+/* Reveal Classes (Initial states for GSAP) */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Horizontal Scroll Section */
+/* Our Collection Slider Styles */
+#products {
+    background-color: #faf9f6;
+    overflow: hidden;
+    width: 100% !important;
+}
+
+#products .swiper {
+    width: 100vw !important;
+    max-width: none !important;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.swiper-pagination {
+    display: none !important;
+}
+
+.swiper-slide {
+    height: auto !important;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Franchise Card Hover Effects */
+.franchise-card {
+    /* FIX: Do NOT animate 'all' as it conflicts with GSAP */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.franchise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Gallery Grid Stagger */
+.gallery-item {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float-anim {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Blurry Navbar Background */
+.nav-scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-scrolled .text-brand-light {
+    color: #c17f30;
+    /* Adjust according to brand color */
+}
